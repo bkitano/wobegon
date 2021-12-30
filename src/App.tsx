@@ -56,12 +56,19 @@ function App() {
             it's available on{" "}
             <a href="https://www.prairiehome.org/">this website</a>, and it's
             free, but difficult to navigate. I used BeautifulSoup to scrape the
-            website and find the links to the episodes. And then I built this
-            simple front end. Is this illegal? I don't know.{" "}
+            website for each show page (like{" "}
+            <a href="https://www.prairiehome.org/shows/58385.html">here</a>) and
+            then find the link to each mp3 file (like{" "}
+            <a href="https://play.publicradio.org/api-2.0.1/o/phc/1996/02/03/phc_19960203_128.mp3">
+              here
+            </a>
+            ). Then I built this simple front end to play them. Is this illegal?
+            I don't know.{" "}
           </p>
           <p>
             {" "}
-            If you do, please email me at <b>randomlakewobegon at gmail dot com</b>.
+            If you do, please email me at{" "}
+            <b>randomlakewobegon at gmail dot com</b>.
           </p>
           <p>
             The main question I have is,{" "}
@@ -97,8 +104,8 @@ function App() {
             because this website{" "}
             <ul>
               <li>
-                substantially uses the original work (since I'm providing
-                every recording), and
+                substantially uses the original work (since I'm providing every
+                recording), and
               </li>
               <li>
                 has an effect on the marketability of the work (since I'm

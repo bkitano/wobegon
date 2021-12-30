@@ -40,7 +40,7 @@ function App() {
       </div>
       <div
         style={{
-          width: "30rem",
+          width: "80%",
           margin: "auto",
         }}
       >

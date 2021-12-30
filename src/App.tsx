@@ -97,7 +97,7 @@ function App() {
             because this website{" "}
             <ul>
               <li>
-                substantially uses the original work (since I'm providing the
+                substantially uses the original work (since I'm providing
                 every recording), and
               </li>
               <li>

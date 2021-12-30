@@ -118,8 +118,8 @@ function App() {
           <p>
             In any case, I'm a big Garrison Keillor fan, and I was merely
             frustrated with his existing website, and wanted to make it easier
-            to hear his show. Here are some links you can go to support him, the
-            creator of the work:
+            to listen to and enjoy his show. Here are some links you can go to
+            support him, the creator of the work:
             <ul>
               <li>
                 <a href="https://www.garrisonkeillor.com/">

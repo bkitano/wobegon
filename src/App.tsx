@@ -12,13 +12,26 @@ function getRandomShowLink() {
   return randomShowLink;
 }
 
+function formatShowLinkToDate(showLink: string) {
+  "https://play.publicradio.org/api-2.0.1/o/phc/2015/11/28/phc_20151128_128.mp3";
+  const parts = showLink.split("/");
+  const year = parts[6];
+  const month = parts[7];
+  const day = parts[8];
+
+  return `${month}/${day}/${year}`;
+}
+
 function App() {
+  const [showLink, setShowLink] = React.useState(getRandomShowLink());
+
   return (
     <div className="App">
       <div>
-        <h1>Play a random episode of Prarie Home Companion.</h1>
+        <h1>Play a random episode of Prairie Home Companion.</h1>
+        <h2>Here's one from {formatShowLinkToDate(showLink)}.</h2>
         <ReactAudioPlayer
-          src={getRandomShowLink()}
+          src={showLink}
           autoPlay
           controls
           loop

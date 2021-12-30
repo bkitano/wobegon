@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1>Play a random episode of Prairie Home Companion.</h1>
+        <h1>Play a random episode of A Prairie Home Companion.</h1>
         <h2>Here's one from {formatShowLinkToDate(showLink)}.</h2>
         <ReactAudioPlayer
           src={showLink}
@@ -37,6 +37,24 @@ function App() {
           loop
           preload="auto"
         />
+      </div>
+      <div
+        style={{
+          margin: "5rem",
+        }}
+      >
+        <h1>Why I made this</h1>
+        <p>
+          I was drinking a lot of coffee and wanted to play a random episode of
+          A Prairie Home Companion. It's not on Spotify or Apple Music, but it's
+          available on <a href="https://www.prairiehome.org/">this website</a>,
+          and it's free, but difficult to navigate.
+        </p>
+        <p>
+          I used BeautifulSoup to scrape the website and find the links to the
+          episodes. And then I built this simple front end. Is this illegal? 
+          I don't know. If you do, email me at <b>randomlakewobegon at gmail dot com</b>.
+        </p>
       </div>
     </div>
   );

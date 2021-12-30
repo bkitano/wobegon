@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+import ReactAudioPlayer from "react-audio-player";
+
+import { showLinks } from "./showLinks";
+
+function getRandomShowLink() {
+  const randomShowLink =
+    showLinks[Math.floor(Math.random() * showLinks.length)];
+  return randomShowLink;
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h1>Play a random episode of Prarie Home Companion.</h1>
+        <ReactAudioPlayer
+          src={getRandomShowLink()}
+          autoPlay
+          controls
+          loop
+          preload="auto"
+        />
+      </div>
     </div>
   );
 }
